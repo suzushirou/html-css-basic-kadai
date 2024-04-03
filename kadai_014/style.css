@@ -1,0 +1,34 @@
+/* bodyで全体のフォント、サイズ、位置の指定 */
+.body {
+  font-family: "Arial" , "Meiryo" , sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* webフォントの読み込みと装飾 */
+.google-font {
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1.2rem;
+  text-shadow: 1px 1px 3px black;
+  border-bottom: solid 3px rgb(115,115,114);
+  /* font-size: 1.5rem; ←どうしてここに入れてもだめなのか*/
+}
+
+/* ここだけフォントサイズを変えるためにid使用(headerでもよかった)
+.google-fontにfont-sizeを入れても反映できないのがなぜかわからない */
+#parent {
+  font-size: 1.5rem;
+  /* ここはheaderにしたので別に#parentで指定する必要はなく、headerでもよい(headerの存在を忘れていた */
+ } 
+
+/* header内の装飾 */
+.blue {
+  color: skyblue;
+}
+.pink {
+  color: rgb(255,192,203);
+}
+
+#child p {
+ font-weight: bold;
+}
