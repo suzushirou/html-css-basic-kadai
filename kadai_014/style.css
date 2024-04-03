@@ -1,0 +1,29 @@
+/* htmlのルート要素で全体のフォント、サイズ、位置の指定 */
+html {
+  font-family: "Arial" , "Meiryo" , sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+header {
+  /* ここはheaderにしたので別に#parentで指定する必要はなくてもよい*/
+  /* webフォントの読み込みと装飾 */
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.0rem;
+  letter-spacing: 1.2em;
+  /* 20pxの2.0remで40px、40pxの1.2倍のspacing */
+  text-shadow: 1px 1px 3px black;
+  border-bottom: solid 3px rgb(115,115,114);
+ } 
+
+/* header内の装飾 */
+.blue {
+  color: skyblue;
+}
+.pink {
+  color: rgb(255,192,203);
+}
+
+#child p {
+ font-weight: bold;
+}
