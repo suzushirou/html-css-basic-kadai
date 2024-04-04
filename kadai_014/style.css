@@ -5,7 +5,7 @@ html {
   text-align: center;
 }
 
-header {
+h1 {
   /* ここはheaderにしたので別に#parentで指定する必要はなくてもよい*/
   /* webフォントの読み込みと装飾 */
   font-family: "Josefin Sans", sans-serif;
