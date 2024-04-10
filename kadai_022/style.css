@@ -21,10 +21,12 @@ main {
 #parent {
   display: flex;
   justify-content: space-around;
+  /* すべての要素を均等に配置 */
 }
 
 .contents {
   border: solid 3px rgb(238,204,204);
+  /* flex-basisってなんだっけ */
   flex-basis: 25%;
   padding: 10px 15px;
   margin: 20px 0;
@@ -33,7 +35,8 @@ main {
 
 h2 {
   font-size: 25px;
-  border: dotted 3px rgb(236,122,122);
+  border-bottom: dotted 3px rgb(236,122,122);
+  /* dottedは点線　dashedは破線 */
 }
 h2::before{
   /* 疑似要素 */
@@ -42,6 +45,7 @@ h2::before{
 }
 
 .contents p:nth-of-type(2)::first-letter {
+  /* 特定の要素のさらに何番目かにさらに最初の一文字目を大きく*/
   font-weight: bold;
   color: rgb(97,206,249);
 }
@@ -60,14 +64,16 @@ a {
   color: rgb(255,255,255);
 }
 a:visited {
+  /* 疑似クラス　訪問済み */
   color: rgb(193,234,251);
 }
 a:hover {
-    /* 疑似クラス */
+    /* 疑似クラス　カーソルが乗ってる間 */
     color: rgb(245,178,168);
 }
 
 @media screen and (max-width:768px) {
+  /* レスポンシブデザイン */
   h2 {
     font-size: 30px;
   }
@@ -75,6 +81,7 @@ a:hover {
     font-size: 25px;
   }
   #parent {
+    /* flex-boxでの指定なのでこれ */
     flex-direction: column;
   }
 }
